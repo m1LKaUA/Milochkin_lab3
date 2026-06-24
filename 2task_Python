@@ -1,0 +1,9 @@
+def update_dict(original: dict, key, value) -> dict:
+    new_dict = original.copy()
+    new_dict[key] = value
+    return new_dict
+
+d1 = {'a': 1, 'b': 2}
+d2 = update_dict(d1, 'b', 99)
+print(d2)
+print(d1)
