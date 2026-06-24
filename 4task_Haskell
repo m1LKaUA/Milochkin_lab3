@@ -1,0 +1,10 @@
+data Person = Person { name :: String, age :: Int } deriving Show
+
+incrementAge :: Person -> Person
+incrementAge p = p { age = age p + 1 }
+
+main :: IO ()
+main = do
+    let p = Person "Dmytro" 20
+    print $ incrementAge p
+    print p
