@@ -1,0 +1,10 @@
+removeAt :: Int -> [a] -> [a]
+removeAt n xs | n < 0 = xs
+removeAt _ [] = []
+removeAt 0 (_:xs) = xs
+removeAt n (x:xs) = x : removeAt (n - 1) xs
+
+main :: IO ()
+main = do
+    print $ removeAt 1 [10, 20, 30]
+    print $ removeAt 5 [1, 2, 3]
