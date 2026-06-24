@@ -1,0 +1,7 @@
+def push(stack: list, item) -> list:
+    return [item] + stack
+
+s1 = [3, 2, 1]
+s2 = push(s1, 4)
+print(s2)
+print(s1)
